@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Tania Veleizan">
+  <title>Practica tu ingles!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="main">
+      
+      <h2>Digitador de ingles</h2>
+      <p>Escribe la siguiente palabra lo mas rapido que puedas:</p>
+
+      <h1 id="randomWord"></h1>
+
+      <input type="text" id="text" autocomplete="off" placeholder="Type the word here..." />
+
+      <p class="time-container">Tiempo restante: <span id="timeSpan">10s</span></p>
+
+      <p class="score-container">Score: <span id="score">0</span></p>
+    </div>
+    <div id="end-game-container" class="end-game-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
