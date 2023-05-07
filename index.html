@@ -5,20 +5,25 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Tania Veleizan">
-  <title>Practica tu ingles!</title>
+  <meta name="author" content="Mike Brevis">
+  <title>Entrega Final</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  
-  <div class="container">
+  <div class="container" id="register-container">
+    <h2>Registro</h2>
+    <p>Por favor, ingresa tu nombre de usuario:</p>
+    <input type="text" id="username" placeholder="Nombre de usuario" />
+    <button id="register-button">Registrarse</button>
+  </div>
+
+  <div class="container" id="game-container" style="display:none;">
     <div class="main">
-      
-      <h2>Digitador de ingles</h2>
-      <p>Escribe la siguiente palabra lo mas rapido que puedas:</p>
+      <h2>Digitador de ingles 2.0</h2>
+      <p>Escribe la palabra lo mas rapido que puedas:</p>
 
       <h1 id="randomWord"></h1>
 
@@ -29,7 +34,13 @@
       <p class="score-container">Score: <span id="score">0</span></p>
     </div>
     <div id="end-game-container" class="end-game-container"></div>
+    <div id="top-scores-container" class="top-scores-container">
+      <h3>Top 3 puntajes</h3>
+      <ol id="topScoresList"></ol>
+    </div>
   </div>
+  <script src="palabras.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

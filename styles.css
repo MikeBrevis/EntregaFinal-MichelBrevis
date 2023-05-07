@@ -14,7 +14,7 @@ body {
     border: 3px solid rgb(177, 120, 13);
     border-radius: 15px;
     padding: 20px;
-    width:1000px;
+    width: 1000px;
     margin-top: 10vh;
     text-align: center;
     margin: 10px auto;
@@ -46,3 +46,19 @@ button {
     justify-content: center;
     align-items: center;
 }
+
+.top-scores-container {
+    font-family: 'Kanit', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.top-scores-container h3 {
+    margin-bottom: 0.5rem;
+}
+
+.top-scores-container ol {
+    list-style: none;
+    padding: 0;
+}
+
